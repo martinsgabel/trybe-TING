@@ -8,6 +8,11 @@ class Queue(AbstractQueue):
     def __len__(self):
         return len(self.__data)
 
+    def __contains__(self, value):
+        if value in self.__data:
+            return True
+        return False
+
     def enqueue(self, value):
         self.__data.append(value)
 
