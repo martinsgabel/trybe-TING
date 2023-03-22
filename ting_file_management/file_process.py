@@ -14,7 +14,7 @@ def process(path_file, instance: Queue):
         return sys.stdout.write(str(new_dict))
 
 
-def remove(instance):
+def remove(instance: Queue):
     if not len(instance):
         return sys.stdout.write("Não há elementos\n")
     removed = instance.search(0)["nome_do_arquivo"]
@@ -24,7 +24,7 @@ def remove(instance):
     )
 
 
-def file_metadata(instance, position):
+def file_metadata(instance: Queue, position):
     try:
         return sys.stdout.write(str(instance.search(position)))
     except IndexError:
