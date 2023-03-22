@@ -32,4 +32,5 @@ def exists_word(word, instance: Queue):
 
 
 def search_by_word(word, instance):
-    pass
+    if not exists_word(word, instance):
+        return []
