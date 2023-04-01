@@ -35,7 +35,3 @@ def search_by_word(word, instance):
     check = exists_word(word, instance)
     if check == []:
         return []
-
-    lines = check["ocorrencias"]
-
-    for
