@@ -32,5 +32,10 @@ def exists_word(word, instance: Queue):
 
 
 def search_by_word(word, instance):
-    if exists_word(word, instance) == []:
+    check = exists_word(word, instance)
+    if check == []:
         return []
+
+    lines = check["ocorrencias"]
+
+    for
